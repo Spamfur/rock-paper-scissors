@@ -12,13 +12,10 @@ function getComputerChoice(){
     }
 }
 
-
 function getHumanChoice(){
     let humanChoice = prompt("Pick either rock, paper or scissors!");
-    return humanChoice
+        return humanChoice
 }
-
-
 
 function playGame(){
     let humanScore = 0;
@@ -59,7 +56,6 @@ for(i = 0; i < 5; i++){
        logScore(humanScore,computerScore);
     }
     else if (humanWins === false){
-        //loss
         ++computerScore;
         logScore(humanScore,computerScore);
     } else if (humanWins === null) {
